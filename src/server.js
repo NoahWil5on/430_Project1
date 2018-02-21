@@ -1,6 +1,6 @@
 const http = require('http');
 const url = require('url');
-//const query = require('querystring');
+// const query = require('querystring');
 
 const contentHandler = require('./contentResponses');
 const jsonHandler = require('./jsonResponses');
@@ -32,7 +32,7 @@ const onGet = (request, response, parsedUrl) => {
   } else {
     switch (parsedUrl.pathname) {
       case '/getImages':
-      jsonHandler.getImages(request, response);
+        jsonHandler.getImages(request, response);
         break;
       case '/':
         contentHandler.getPage(parsedUrl.pathname, response, 'text/html');
