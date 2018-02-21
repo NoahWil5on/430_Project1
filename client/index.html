@@ -1,0 +1,47 @@
+<!doctype html>
+
+<head lang="en">
+    <title>Image Share</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script src="./actions.js"></script>
+</head>
+
+<body>
+    <div id="page-div">
+    </div>
+    <div id="main-div">
+        <header>
+            <div id="page-logo">
+                <h1>Image Share</h1>
+            </div>
+            <div id="hamburger">
+            </div>
+        </header>
+        <div>
+            <div id="quote-div">
+                <h2>&ldquo; The world is yours &rdquo;</h2>
+            </div>
+            <div id="search-div">
+                <div id="search-box">
+                    <form action="/getImages" id="image-form" method="GET">
+                        <input type="text" id="search-field" name="query" placeholder="Search images...">
+                        <button type="submit" id="search-button">
+                            <i class="material-icons">search</i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="gallery-div">
+                <ul id="gallery-list">
+                </ul>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </div>
+</body>
