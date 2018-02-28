@@ -11,16 +11,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
     <script src="./scripts/client.js"></script>
     <script src="./scripts/actions.js"></script>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/myPhotos.js"></script>
 </head>
 
 <body>
     <div id="nav-div">
         <nav>
-            <div class="nav-option active-page">
+            <div class="nav-option" onclick="window.location.href = './index.html'">
                 <p>Home</p>
             </div>
-            <div class="nav-option" onclick="window.location.href = './myPhotos.html'">
+            <div class="nav-option active-page">
                 <p>My Photos</p>
             </div>
             <div class="nav-option" onclick="window.location.href = './sharedPhotos.html'">
@@ -40,17 +40,7 @@
             </header>
             <div id="main-container" onclick="closeMenu()">
                 <div id="quote-div">
-                    <h2>&ldquo; The world is your oyster &rdquo;</h2>
-                </div>
-                <div id="search-div">
-                    <div id="search-box">
-                        <form action="/getImages" id="image-form" method="GET">
-                            <input type="text" id="search-field" name="query" placeholder="Search images...">
-                            <button type="submit" id="search-button">
-                                <i class="material-icons">search</i>
-                            </button>
-                        </form>
-                    </div>
+                    <h2>&ldquo; This is the best selection you could come up with? &rdquo;</h2>
                 </div>
                 <div id="gallery-div">
                     <ul id="gallery-list">
